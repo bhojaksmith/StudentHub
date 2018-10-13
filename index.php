@@ -6,14 +6,12 @@
 </head>
 <body>
 	<div class="topBar">
-		<span id="icon"><img src=""></span>
-		<span id="f">
-			Upload
-		</span>
+		<span id="icon"><img src="logo2.png"></span>
+		<span id="f">Upload</span>
 		<span id="b">Minor Projects</span>
 		<span id="e">Explore</span>
-		<span id="m"></span>
-		<span id="p">Pricing</span>
+		
+		<span id="p">Whats New?</span>
 
 		<span class="search">
 			<input type="text" name="search" placeholder="Search Student Hub " id="search"><i class="fa fa-search"></i>
@@ -26,7 +24,7 @@
 		<h1 id="tag">
 			Built For <br> students <br>by students !
 		</h1>
-		<h2 style="color: gray">
+		<h2 style="color:#f1f1f1">
 			StudentHub is a Collaboration platform inspired by the way you work. From minor projects to major start-ups, you can upload codes, assignments, projects, and review them alongside thousands of other Students.
 		</h2>
 	</div>
@@ -48,26 +46,27 @@
 	</form>
 </body>
 <script type="text/javascript">
-	function CheckPassword(inputtext) 
-{ 
+	function CheckPassword(inputtext) { 
 var passw=  /^[A-Za-z]\w{7,14}$/;
-if(inputtext.value.match(passw)) 
-{ 
+
+if(inputtext.value.match(passw)){ 
 	return true;
+//	document.getElementById("submit").disabled = false;
 }
-else
-{ 
-alert('Please Enter Strong Password  !')
-return false;
+else{ 
+//	document.getElementById("submit").disabled = true;
+	alert('Please Enter Strong Password  !')
+	return false;
 }
 }
 </script>
 <style type="text/css">
+
 	.subtext{
 		font-size: .6em
 	}
 	#regDetails{
-		padding: 2%;
+		padding: 3.4%;
 	}
 	.register{
 		font-size:1.4em; 
@@ -75,7 +74,7 @@ return false;
 		padding: 4%;
 		font-weight: lighter;
 		background: #f1f1f1;
-		margin:-29% 5% 20% 65%; 
+		margin:-32% 5% 20% 65%; 
 	}
 	input{
 		border: .3px solid gray;
@@ -85,13 +84,13 @@ return false;
 	#submit{
 		width: 100%;
 		color:#f1f1f1;
-		background:#2ebc4f; 
+		background:#1ebbd7; 
 		border:none; 
 		font-size: 1em;
 		padding: 3%;
 	}
 	#submit:hover{
-		background:#28a445 ; 
+		background:#199ad3; 
 		transition: .4s ease;
 		cursor: pointer;
 	}
@@ -148,11 +147,15 @@ return false;
 		padding-bottom:1%;
 		top:0%;
 		padding-left:13.3%;
+		/*opacity: .6;*/
 		}
-
 	body{ 	
-		background:url("background.svg") ,#2b3137;
-		font-family :Avenir;
+		/*
+		#005073 #107dac #199ad3 #1ebbd7
+		*/
+		background:linear-gradient(#2b3137,#005073,#199ad3,#1ebbd7);
+		font-family :'Avenir';
+		overflow: hidden;
 	}
 
 
@@ -161,17 +164,18 @@ return false;
 		margin-top:2.8%;
 		color: #fff;
 		margin-right: 2.3%;
-		padding-top: 2%;
-		padding-bottom: 5%;
+		padding-top: %;
+		/*padding-bottom: 5%;*/
 		font-size: 1em;		
 	}
 
 	img{
-		border-radius: 50%;
+		/*padding-top: 2%;*/
 		margin-top:1%;
-		/*margin-bottom:1%;*/
-		height: 2.6%;
-		width: 2.6%;
+		margin-right:2%; 
+		margin-bottom:-1.5%;
+		height: 3.6%;
+		width: 3.6%;
 	}
 	a{
 		color: gray;

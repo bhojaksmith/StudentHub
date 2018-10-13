@@ -1,19 +1,36 @@
 <?php
+
 	$username = $_POST['username'];
 	$pword = $_POST['password'];
 	$mail = $_POST['mail'];
 	$db = "studenthub";
 	$connect = mysqli_connect('localhost','root','');
-	$database = mysqli_select_db($connect,$db );
+	$database = mysqli_select_db($connect,$db);
+	$flag =0;
 
-	
-$insertquery = "INSERT INTO register(userName,password,studentMail) VALUES ('$username', '$pword', '$mail')";
+	if($userName!=="" && $pword!=="" && $mail!==""){
+		$insertquery = "INSERT INTO register(userName,password,studentMail) VALUES ('$username', '$pword', '$mail')";
+	}
+	else{
+		header('Location:index.php');	
+	}
+	if ( $connect->query ($insertquery) === TRUE) {
+		$flag = 1;
+	    echo "New record created successfully";
+	} else {
+	    echo "Error: " . $insertquery . "<br>" . $connect->error;
+	}
 
-if ( $connect->query ($insertquery) === TRUE) 
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $insertquery . "<br>" . $connect->error;
-}
-
+    if($flag == 1){
+		$flag=0;
+    	header('Location:dashboard.php');
+    }
+    else{
+    	header('Location:index.php');	
+    	$flag=0;
+    }
+    $flag=0;
+    
 $connect->close();
+
 ?>
