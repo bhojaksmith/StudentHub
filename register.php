@@ -6,6 +6,7 @@
 	$db = "studenthub";
 	$connect = mysqli_connect('localhost','root','');
 	$database = mysqli_select_db($connect,$db);
+	//Thanks to Sharan Chhugani (18BCE354) for helping with $flag logic; ♥
 	$flag =0;
 
 	if($userName!=="" && $pword!=="" && $mail!==""){

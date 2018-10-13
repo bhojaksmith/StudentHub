@@ -8,16 +8,16 @@
 	<div class="topBar">
 		<span id="icon"><img src="logo2.png"></span>
 		<span id="f">Upload</span>
-		<span id="b">Minor Projects</span>
-		<span id="e">Explore</span>
-		
+		<span id="e">Create Projects</span>
+<!-- 		<span id="b">View Projects</span>
+ -->		
 		<span id="p">Whats New?</span>
 
 		<span class="search">
 			<input type="text" name="search" placeholder="Search Student Hub " id="search"><i class="fa fa-search"></i>
 		</span>
 		<a href="login.php" >
-			<span>Log in?</span>
+			<span id="login1">Log in?</span>
 		</a>
 	</div>
 	<div class="body">
@@ -45,167 +45,8 @@
 		</div>
 	</form>
 </body>
-<script type="text/javascript">
-	function CheckPassword(inputtext) { 
-var passw=  /^[A-Za-z]\w{7,14}$/;
-
-if(inputtext.value.match(passw)){ 
-	return true;
-//	document.getElementById("submit").disabled = false;
-}
-else{ 
-//	document.getElementById("submit").disabled = true;
-	alert('Please Enter Strong Password  !')
-	return false;
-}
-}
-</script>
-<style type="text/css">
-
-	.subtext{
-		font-size: .6em
-	}
-	#regDetails{
-		padding: 3.4%;
-	}
-	.register{
-		font-size:1.4em; 
-		color: gray;
-		padding: 4%;
-		font-weight: lighter;
-		background: #f1f1f1;
-		margin:-32% 5% 20% 65%; 
-	}
-	input{
-		border: .3px solid gray;
-		width: 100%;
-		border-radius: 3%; 
-	}
-	#submit{
-		width: 100%;
-		color:#f1f1f1;
-		background:#1ebbd7; 
-		border:none; 
-		font-size: 1em;
-		padding: 3%;
-	}
-	#submit:hover{
-		background:#199ad3; 
-		transition: .4s ease;
-		cursor: pointer;
-	}
-	i.fa-upload{
-		position: absolute;
-		top:8%;
-		left:15.4%;
-		padding-bottom: 55%;
-	}
-	i.fa-search { 
-		position: absolute; 
-		top: 1%; 
-		left: 85%;
-		color:gray; 
-	}
-
-	.search{
-		position: relative;
-	}
-
-	.body{		/*Top right bottom left*/
-		margin:16% 0% 0% 13%; 
-
-	}
-
-	h2{
-		margin:0% 40% 0% 0%;
-	}
-
-	#tag{
-		font-size: 4em;
-		color: #f1f1f1;
-	}
-
-	#search:focus{
-		background: #f1f1f1;
-		color: #202020;	
-	}
-
-	#search{
-		background: #404348;
-		padding: .5% 2% .7% .4%;
-		color:white;
-		width:18%; 
-		border: none;
-
-	}
-	.topBar{
-		position: fixed;
-		background: #24292D;
-		color: #f1f1f1;
-		width: 100%;
-		left:0%;
-		padding-bottom:1%;
-		top:0%;
-		padding-left:13.3%;
-		/*opacity: .6;*/
-		}
-	body{ 	
-		/*
-		#005073 #107dac #199ad3 #1ebbd7
-		*/
-		background:linear-gradient(#2b3137,#005073,#199ad3,#1ebbd7);
-		font-family :'Avenir';
-		overflow: hidden;
-	}
-
-
-	#f,#b,#e,#m,#p{
-		margin:0% 0% 0% 0%; 
-		margin-top:2.8%;
-		color: #fff;
-		margin-right: 2.3%;
-		padding-top: %;
-		/*padding-bottom: 5%;*/
-		font-size: 1em;		
-	}
-
-	img{
-		/*padding-top: 2%;*/
-		margin-top:1%;
-		margin-right:2%; 
-		margin-bottom:-1.5%;
-		height: 3.6%;
-		width: 3.6%;
-	}
-	a{
-		color: gray;
-		text-decoration: none;
-	}
-	a:hover{
-		color: white;
-	}
-
-	img:hover,#f:hover,#b:hover,#e:hover,#m:hover,#p:hover{
-		color:gray;
-		cursor: pointer;
-	}
-	/* latin-ext */
-@font-face {
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Avenir LT Pro 45 Book'), local('AvenirLTPro-Book'), url(https://fonts.gstatic.com/l/font?kit=k6e5O52B6MekHtih-eM9afesZW2xOQ-xsNqO47m55DA&skey=8887f17a62203d44&v=v1) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Avenir LT Pro 45 Book'), local('AvenirLTPro-Book'), url(https://fonts.gstatic.com/l/font?kit=yrOSjsChZucrvtFmTHmr7g&skey=8887f17a62203d44&v=v1) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-</style>
+<script type="text/javascript" src="password.js"></script>
+<link rel="stylesheet" type="text/css" href="index.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 
