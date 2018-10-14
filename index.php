@@ -7,13 +7,13 @@
 <body>
 	<div class="topBar">
 		<span id="icon"><img src="logo2.png"></span>
-		<span id="f">Upload</span>
+		<!-- <span id="f">Upload</span>
 		<span id="e">Create Projects</span>
-<!-- 		<span id="b">View Projects</span>
- -->		
+		<span id="b">View Projects</span>
+ 
 		<span id="p">Whats New?</span>
 
-		<span class="search">
+		 --><span class="search">
 			<input type="text" name="search" placeholder="Search Student Hub " id="search"><i class="fa fa-search"></i>
 		</span>
 		<a href="login.php" >

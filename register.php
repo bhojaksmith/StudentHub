@@ -26,10 +26,15 @@
 	else {
 	    echo "Error: " . $insertquery . "<br>" . $connect->error;
 	}
-	$_COOKIE['userid'] = $counter++;
+	 $counter= $counter++;
+	 $_COOKIE['userid'] = $counter;
 
     if($flag == 1){
 		$flag=0;
+		session_start();  
+    	$_SESSION['sess_user']=$username; 
+    	echo $dbpword;
+    	header('location:dashboard.php');x
     	header('Location:dashboard.php');
     }
     else{

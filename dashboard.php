@@ -9,7 +9,7 @@
 	$encpword = base64_encode($pword);
 	$mail = $_POST['mail'];
 	*/
-	$id = $_COOKIE['userid'];
+	//$id = $_COOKIE['userid'];
 	$dbhost = 'localhost';
 	$dbuser = 'root';
 	$dbpass = '';	        
@@ -17,11 +17,17 @@
 	//$database = mysqli_select_db($connect,$db);
 	/*$user = $connect->query($getuser);*/
 	$connect = mysqli_connect($dbhost, $dbuser, $dbpass,$db);
-	$getuser = "SELECT userName FROM register WHERE regid=$id ";
+	$getuser = "SELECT userName FROM register WHERE regid=2 ";
 	$query = mysqli_query($connect,$getuser);
 	$row = mysqli_fetch_array($query);
 	$user = $row['userName'];
+	session_start();
+	$user  = $_SESSION['sess_user'] ;
 
+  if (!isset($_SESSION["sess_user"]))
+   {
+      header("location: index.php");
+   }
 //Welcome to the dashboard
 ?>
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -43,7 +49,9 @@
 		<span class="search">
 			<input type="text" name="search" placeholder="Search Student Hub " id="search"><i class="fa fa-search"></i>
 		</span>
-		<span>Hello <?php echo $user?></span>
+		<span>&nbsp;Hello <i><?php echo $user?></i></span>
+		<a href="logout.php"><span id="logout">&nbsp;&nbsp;Log out?</span></a>
+		
 		<!-- 
 		<a href="login.php" >
 			<span id="login1">Log in?</span>

@@ -12,7 +12,7 @@
 		
 	</div>
 
-<form action="loginV.php" method="post" name="register" id="form">
+<form action="loginValidation.php" method="post" name="register" id="form">
 		<div class="register">
 			<h2>Log in to<br> Student Hub</h2>
 			Username:<br>
