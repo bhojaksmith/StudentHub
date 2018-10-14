@@ -32,13 +32,13 @@
 		<div class="register">
 			<h2>Register for Student Hub</h2>
 			Username:<br>
-			<input type="text" name="username" placeholder="Pick a username" id="regDetails"><br><br>
+			<input type="text" name="username" placeholder="Pick a username" id="regDetails" required="true" autocomplete="off"><br><br>
 			
 			Email :<br>
-			<input type="email" name="mail" placeholder="you@example.com" id="regDetails"><br><br>
+			<input type="email" name="mail" placeholder="you@example.com" id="regDetails" required="true" autocomplete="off"><br><br>
 	
 			Password :<br>
-			<input type="password" name="password" placeholder="Create a password" id="regDetails">
+			<input type="password" name="password" placeholder="Create a password" id="regDetails" pattern=".{8,12}" required title="8 to 12 characters">
 			<span class="subtext">Make sure it's at least 7 characters, including a number, and a lowercase letter.</span><br><br>
 
 			<input type="submit" name="submit" value="Sign up For Student Hub" id="submit"  onclick="CheckPassword(document.register.password)">
@@ -47,6 +47,7 @@
 </body>
 <script type="text/javascript" src="password.js"></script>
 <link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 
