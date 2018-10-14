@@ -1,4 +1,9 @@
-
+		 <?php
+		 	session_start();
+			if (isset($_SESSION["sess_user"])){
+		      header('location: dashboard.php');
+		   }
+		 ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +18,10 @@
  
 		<span id="p">Whats New?</span>
 
-		 --><span class="search">
-			<input type="text" name="search" placeholder="Search Student Hub " id="search"><i class="fa fa-search"></i>
+		 -->
+
+		 <span class="search">
+		 <input type="text" name="search" placeholder="Search Student Hub " id="search"><i class="fa fa-search"></i>
 		</span>
 		<a href="login.php" >
 			<span id="login1">Log in?</span>

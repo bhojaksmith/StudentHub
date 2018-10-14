@@ -1,15 +1,15 @@
 <div class="topBar">
 		<span id="icon"><img src="logo2.png"></span>
-		<span id="f">Upload</span>
+<!-- 		<span id="f">Upload</span>
 		<span id="e">Create Projects</span>
-<!-- 		<span id="b">View Projects</span>
- -->		
+ 		<span id="b">View Projects</span>
 		<span id="p">Whats New?</span>
 
-		<span class="search">
+ -->		<span class="search">
 			<input type="text" name="search" placeholder="Search Student Hub " id="search"><i class="fa fa-search"></i>
+
 		</span>
-		
+		<a href="index.php">&nbsp;&nbsp;New Users, Register Here !</a>
 	</div>
 
 <form action="loginValidation.php" method="post" name="register" id="form">
@@ -33,9 +33,9 @@
    	function hidepass() {
    	 var x = document.getElementById("regDetails");
   	    x.type = "password"; 
-   }
-        
+   }	     
 	</script>
+   
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -49,11 +49,14 @@
 	}
 	#form{
 		margin:10% 0 0 0; 
+
+
 	}
 	#regDetails,#regDetails1{
 		padding: 4%;
 	}
 	.register{
+				    /*box-shadow: 3px 3px 3px 3px #aaa;*/
 		font-size:1.4em; 
 		color: gray;
 		padding: 4%;

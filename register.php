@@ -34,7 +34,7 @@
 		session_start();  
     	$_SESSION['sess_user']=$username; 
     	echo $dbpword;
-    	header('location:dashboard.php');x
+    	header('location:dashboard.php');
     	header('Location:dashboard.php');
     }
     else{
