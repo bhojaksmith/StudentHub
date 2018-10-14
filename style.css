@@ -4,6 +4,7 @@
 		border-radius: 3%; 
 	}
 	.topBar{
+		transition: 1.2s ease;
 		position: fixed;
 		background: #24292D;
 		color: #f1f1f1;
@@ -41,8 +42,11 @@
 		/*
 		#005073 #107dac #199ad3 #1ebbd7
 		*/
+		height:;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
 		color: #f1f1f1;
-		background:linear-gradient(#2b3137,#199ad3,#1ebbd7,#2b3137);
+		background:linear-gradient(#199ad3,#107dac , #2b3137) ;
 		font-family :'Avenir';
 		overflow: hidden;
 	}
